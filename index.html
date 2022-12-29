@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="site.js"></script>
+</head>
+
+<body>
+    <h1>Haftanin Gunleri</h1>
+    <input placeholder="Bir Rakam Giriniz" type="text" id="day">
+    <button onclick="findDay()">Hangi gun?</button>
+    <p id="result"></p>
+
+    <script>
+        function findDay () {
+            let dayElement = document.getElementById('day').value;
+            let sonuc;
+            let showDay = document.getElementById('result');
+
+                    if (dayElement == 1) {
+                        sonuc="Pazartesi";
+                    } else if (dayElement == 2)
+        {
+                    sonuc = "Sali";
+                    } else if (dayElement == 3) {
+                    sonuc = "Carsamba";
+                    } else if (dayElement == 4) {
+                    sonuc = "Persembe";
+                    } else if (dayElement == 5) {
+                    sonuc = "Cuma";
+                    } else if (dayElement == 6) {
+                    sonuc = "Cumartesi";
+                    } else if (dayElement == 7) {
+                    sonuc = "Pazar";
+                    } else{
+                        result.innerHTML = "Gecersiz bir deger girdiniz! Lutfen tekrar deneyiniz."
+                            return;
+                    }
+                         result.innerHTML = sonuc + " gunundesiniz";
+                }
+    </script>
+</body>
+
+</html>
